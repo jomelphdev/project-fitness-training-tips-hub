@@ -1,0 +1,135 @@
+@import "../../css/_mixins.scss";
+@import "../../css/_theme-vars.scss";
+@import "css/_skin-vars.scss";
+
+/* Extra Styles */
+/*--------------*/
+
+
+/* Scroll to Top */
+.scroll_to_top_style_default {
+    @include square(2.8em);
+    color: var(--theme-color-inverse_link);
+    border-color: var(--theme-color-text_link);
+    background-color: var(--theme-color-text_link);
+    &:hover {
+        color: var(--theme-color-inverse_link);
+        border-color: var(--theme-color-text_hover);
+        background-color: var(--theme-color-text_hover); 
+    }
+}
+
+/* Buttons shadow */
+#learn-press-course .course-summary-sidebar .course-sidebar-preview .lp-course-buttons button.button-enroll-course,
+#learn-press-course .course-summary-sidebar .course-sidebar-preview .lp-course-buttons button,
+.learnpress .learn-press-form-login button[type="submit"], 
+.learnpress .learn-press-form-register button[type="submit"],
+.learnpress #learn-press-profile-basic-information button[type="submit"],
+.learnpress.learnpress-page .lp-button, 
+.learnpress.learnpress-page #lp-button,
+#popup-course #popup-content .lp-button, 
+.lp-widget-recent-courses [class*="-courses__footer__link"], 
+.lp-widget-popular-courses [class*="-courses__footer__link"],
+.lp-widget-featured-courses [class*="-courses__footer__link"],
+.learnpress.widget_course_featured .lp-widget-featured-courses__footer__link,
+.elementor-widget-wp-widget-learnpress_widget_course_featured .lp-widget-featured-courses__footer__link,
+.lp-archive-courses .learn-press-courses[data-layout="list"] .course .course-item .course-content .course-readmore a,
+
+
+.woocommerce #btn-buy, .tinv-wishlist .tinvwl_added_to_wishlist.tinv-modal button,
+.woocommerce #respond input#submit, .woocommerce .button, .woocommerce-page .button, 
+.woocommerce a.button, .woocommerce button.button, .woocommerce input.button,
+.woocommerce input[type="button"], .woocommerce-page input[type="button"],
+.woocommerce input[type="submit"], .woocommerce-page input[type="submit"],
+.woocommerce ul.products li.product .button, .woocommerce div.product form.cart .button,
+.woocommerce #review_form #respond p.form-submit input[type="submit"], 
+.woocommerce-page #review_form #respond p.form-submit input[type="submit"],
+.woocommerce table.my_account_orders .order-actions .button,
+.woocommerce table.cart td.actions .button, #add_payment_method .wc-proceed-to-checkout a.checkout-button,
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button, 
+.woocommerce-checkout .wc-proceed-to-checkout a.checkout-button, .yith-woocompare-widget a.clear-all
+.woocommerce .widget_price_filter .price_slider_amount .button,
+.woocommerce .widget_shopping_cart .buttons a, 
+.woocommerce.widget_shopping_cart .buttons a,
+
+.comments_wrap .comment-form .form-submit input[type="submit"],
+
+.wp-block-button .wp-block-button__link,
+.wp-block-button.is-style-outline > .wp-block-button__link,
+.wpcf7 .wpcf7-submit {
+    @include box-shadow(none !important);
+}
+
+/* Cart */
+.sc_layouts_cart:not(.modern) {
+    .sc_layouts_cart_widget {
+        .total {
+            border-color: var(--theme-color-extra_bd_color) !important;
+        }
+    }
+} 
+
+/* Price */
+.sc_price_simple {
+    .sc_price_item {
+        .sc_price_item_link {
+            &:hover,
+            &:focus {
+                @include box-shadow(none);
+            }
+        }
+        &.sc_price_active {
+            .sc_price_item_link {
+                @include box-shadow(none);
+            }
+        }
+    }
+}
+
+/* Services */
+.sc_services_default {
+    .sc_services_item.sc_services_item_featured_top {
+        @include box-shadow(none);
+    }
+}
+
+/* 404 */
+.post_item_404 {
+    .post_content {
+        .all-svg {
+            display: none;
+        }
+    }
+    .go_home {
+        @include box-shadow(none);
+    } 
+} 
+
+/* LearnPress */
+.lp-archive-courses {
+    .lp-courses-bar {
+        .search-courses {
+            input[type="text"] {
+                @include box-shadow(none !important); 
+            }
+        }
+    }
+    .learn-press-courses {
+        &[data-layout="list"],
+        &[data-layout="grid"] {
+            .course {
+                .course-item {
+                    @include box-shadow(none !important);
+                }
+            }
+        } 
+    } 
+} 
+
+/* Custom Class */
+body:not(.elementor-editor-active) {
+	.no-select img {
+		user-select: none;
+		pointer-events:none;
+	}
+}

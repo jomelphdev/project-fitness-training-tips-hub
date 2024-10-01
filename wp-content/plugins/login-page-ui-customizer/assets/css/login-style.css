@@ -1,0 +1,307 @@
+html, body {
+	height: auto;
+}
+
+.crlpuic-wrapper {
+	position: relative;
+	display: flex;
+	height: 100vh;
+
+}
+
+.crlpuic-content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.crlpuic-content-left{
+	left:0;
+}
+
+.crlpuic-content-right{
+	right:0;
+}
+
+.crlpuic-overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+}
+
+.boxed .crlpuic-wrapper{
+	height: auto;
+	max-width: 70%;
+	margin: 8% auto;
+}
+
+.boxed .login form,
+.crlpuic-form-1-3-left .login form {
+	padding: 0;
+}
+
+body .crlpuic-form-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+body .crlpuic-content-wrapper {
+	display: flex;
+	padding:8%;
+	flex-wrap: wrap;
+}
+
+body.crlpuic-full-width .crlpuic-content-wrapper {
+	padding:0;
+}
+
+.center-form,
+.center-form .crlpuic-wrapper {
+	width: 100%;
+}
+
+.crlpuic-form-shadow {
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 40px !important;
+	border-radius: 10px !important;
+}
+
+#login h1 {
+	line-height: 2rem;
+}
+
+.login label {
+	width: 100%;
+}
+
+.interim-login #login_error, .interim-login.login .message {
+	margin: 10px auto;
+}
+
+.crlpuic-content-wrapper h2{
+	font-size: 32px;
+	margin-bottom: 20px;
+	width:100%;
+}
+
+.crlpuic-content-wrapper h3{
+	font-size: 22px;
+	margin-bottom: 16px;
+}
+
+.crlpuic-content-wrapper p{
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.crlpuic-form-1-3-left .crlpuic-content-wrapper p {
+	font-size: 24px;
+}
+
+body .crlpuic-content-wrapper svg,
+body .crlpuic-content-wrapper img {
+	max-width: 100%;
+}
+
+body:not( .crlpuic-one-half) .crlpuic-wrapper .crlpuic-form-wrapper, .crlpuic-form-wrapper-inner {
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+
+.crlpuic-form-wrapper-inner,
+.crlpuic-content-wrapper-inner {
+	margin: 5% auto;
+}
+
+body.crlpuic-one-half .crlpuic-wrapper {
+	flex-wrap: wrap;
+}
+
+body.crlpuic-one-half .crlpuic-wrapper>.crlpuic-content,
+body.crlpuic-one-half .crlpuic-wrapper>.crlpuic-form-wrapper {
+	width: 50%;
+}
+
+body.crlpuic-one-half.crlpuic-left-form .crlpuic-wrapper {
+	flex-direction: row-reverse;
+}
+
+body.crlpuic-login-vertical-align-1 .crlpuic-form-wrapper {
+	align-items: flex-start;
+}
+
+body.crlpuic-login-vertical-align-3 .crlpuic-form-wrapper {
+	align-items: flex-end;
+}
+
+body.crlpuic-login-horizontal-align-1 .crlpuic-form-wrapper {
+	justify-content: flex-start;
+}
+
+body.crlpuic-login-horizontal-align-3 .crlpuic-form-wrapper {
+	justify-content: flex-end;
+}
+
+
+#loginform,
+#registerform,
+#lostpasswordform {
+	box-sizing: border-box;
+	max-height: 100%;
+	margin: 0 auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: none;
+}
+
+.crlpuic-transparent {
+	background-color: transparent !important;
+}
+
+.login h1 a{
+	background-position: center;
+	background-size: contain !important;
+	width: 100%;
+}
+
+#registerform #wp-submit {
+	float: none;
+	margin-top: 15px;
+}
+
+.login.crlpuic--text-logo:not(.crlpuic--both-logo) h1 a {
+	background-image: none !important;
+	text-indent: unset;
+	width: auto !important;
+	height: auto !important;
+}
+
+.crlpuic-logo-opacity:after {
+	opacity: 0.5;
+	z-index: -1;
+}
+
+#login form p label br {
+	display: none;
+}
+
+.login input[type=text]:focus,
+.login input[type=password]:focus,
+.login input[type=checkbox]:focus{
+	box-shadow: none;
+}
+
+#loginform #user_login,
+#loginform #user_pass {
+	padding-left: 17px;
+	background-size: 16px 16px;
+	background-position: 8px 15px;
+	font-size: 16px;
+}
+
+.login input.password-input {
+	font-family: inherit;
+}
+
+#loginform input.user_login{
+	padding-left: 27px;
+	background-image: url('../images/username.svg') !important;
+	background-repeat: no-repeat;
+}
+
+#loginform input.user_pass{
+	padding-left: 27px;
+	background-image: url('../images/password.svg') !important;
+	background-repeat: no-repeat;
+}
+
+#login {
+	text-align: center;
+	padding: 0;
+}
+
+#loginform, #registerform, #lostpasswordform {
+	text-align: left;
+}
+
+.login #nav, .login #backtoblog, .login #backtoblog a, .login #nav a {
+	display: inline-block;
+	text-align: center;
+}
+
+.login form .input, .login input[type="text"], .login input[type="password"] {
+	font-size: 16px;
+	padding: 12px;
+}
+
+.login form .forgetmenot label{
+	margin-bottom: 16px;
+	display: inline;
+}
+
+input[type="text"], input[type="password"] {
+	border: 1px solid #E6E5E4;
+}
+
+::-webkit-input-placeholder,
+::placeholder {
+	color: #929191;
+	opacity: revert;
+}
+
+.boxed #lostpasswordform #user_login,
+.boxed #lostpasswordform #user_login::placeholder{
+	font-size: 16px;
+	background-color: #EBEBEB;
+	padding: 8px;
+}
+
+.boxed.crlpuic-left-form .crlpuic-content,
+.boxed.crlpuic-right-form .crlpuic-form-wrapper {
+	border-radius: 0px 30px 30px 0px;
+}
+
+.boxed.crlpuic-left-form .crlpuic-form-wrapper,
+.boxed.crlpuic-right-form .crlpuic-content {
+	border-radius: 30px 0px 0px 30px;
+}
+
+@media only screen and (max-width: 768px) {
+	body.crlpuic-one-half .crlpuic-wrapper>.crlpuic-content,
+	body.crlpuic-one-half .crlpuic-wrapper>.crlpuic-form-wrapper {
+		width: 50% !important;
+	}
+}
+
+@media only screen and (max-width: 577px) {
+	body.crlpuic-one-half .crlpuic-wrapper>.crlpuic-content,
+	body.crlpuic-one-half .crlpuic-wrapper>.crlpuic-form-wrapper {
+		width: 100% !important;
+		position: relative;
+	}
+	body.crlpuic-one-half.crlpuic-left-form .crlpuic-wrapper .crlpuic-content,
+	body.crlpuic-one-half.crlpuic-left-form .crlpuic-wrapper .crlpuic-form-wrapper,
+	body.crlpuic-one-half.crlpuic-right-form .crlpuic-wrapper .crlpuic-content,
+	body.crlpuic-one-half.crlpuic-right-form .crlpuic-wrapper .crlpuic-form-wrapper {
+		width: 100%;
+	}
+	body.crlpuic-one-half.crlpuic-left-form .crlpuic-wrapper .crlpuic-content,
+	body.crlpuic-one-half.crlpuic-right-form .crlpuic-wrapper .crlpuic-content {
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+	.boxed .crlpuic-wrapper{
+		height: auto;
+		max-width: 90%;
+		margin: 4% auto;
+	}
+}

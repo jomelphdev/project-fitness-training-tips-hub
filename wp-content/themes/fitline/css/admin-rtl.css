@@ -1,0 +1,133 @@
+/* About Theme */
+.fitline_about {
+	margin: 2em 0 0 2em;
+}
+
+/* Theme Options */
+.fitline_options_item[class*="column-"] {
+	padding: 1.25em 0 1.25em 2em;
+}
+.fitline_list_choice_item {
+	margin-left: 20px;
+	margin-right: 0;
+}
+.fitline_options_header {
+	margin: 1em 0 0 20px;
+}
+.fitline_options_title {
+	float: right;
+}
+.fitline_options_item_info {
+	border-right: 0 !important;
+}
+.fitline_options_item_title {
+	padding-left: 30px;
+	padding-right: 0;
+}
+.fitline_options_item_info .fitline_options_item_title,
+[class*="fitline_column-"] .fitline_options_item_title,
+[class*="fitline_column-"] .fitline_options_item_data {
+	text-align: right;
+}
+.fitline_range_slider_value {
+	margin-left: 10px !important;
+	margin-right: 0 !important;
+}
+.fitline_options_buttons {
+	float: left;
+	text-align: left;
+}
+.fitline_options .fitline_options_button:before {
+	margin: -1px 0 0 0.3em;
+}
+div.fitline_tabs_vertical > ul.ui-tabs-nav > li.ui-state-active {
+	border-right: 3px solid #11a0d2;
+	border-left: 0;
+}
+div.fitline_tabs_vertical > ul.ui-tabs-nav > li.ui-state-active > a.ui-tabs-anchor {
+	right: 1px;
+	left: auto;
+	padding-right: 10px;
+	padding-left: 13px;
+}
+div.fitline_tabs > ul.ui-tabs-nav > li > a > i[class*="dashicons-"],
+div.fitline_tabs > ul.ui-tabs-nav > li > a > i[class*="icon-"] {
+	margin: 0 0 0 0.5em;
+}
+div.fitline_tabs_vertical > ul.ui-tabs-nav > li.fitline_tabs_title_super > a.ui-tabs-anchor {
+	padding-left: 2em;
+	padding-right: 13px;
+}
+div.fitline_tabs_vertical > ul.ui-tabs-nav > li.fitline_tabs_title_super:after {
+	content: '\e858';
+	left: 12px;
+	right: auto;
+}
+div.fitline_tabs_vertical > ul.ui-tabs-nav > li.fitline_tabs_title_sub > a.ui-tabs-anchor,
+div.fitline_tabs_vertical > ul.ui-tabs-nav > li.fitline_tabs_title_sub.ui-state-active > a.ui-tabs-anchor {
+	padding: 0.6em 2.95em 0.6em 0.6em;
+}
+.fitline_range_slider_units {
+	margin-right: -8px;
+	margin-left: 0;
+}
+.fitline_options_item_radio .fitline_options_item_holder,
+.fitline_options input[type="radio"] + .fitline_options_item_holder {
+	margin-left: 0.5em;
+	margin-right: 0;
+}
+.fitline_options_item_radio .fitline_options_item_label {
+	margin: 0 0 0 1em;
+}
+.fitline_checklist.fitline_sortable .fitline_checklist_item_label {
+	padding: 6px 6px 6px 2.5em;
+}
+.fitline_options_item_checkbox input[type="checkbox"],
+.fitline_options_item_checklist input[type="checkbox"] {
+	margin-left: 0.5em;
+	margin-right: 0;
+}
+.fitline_options_item_checkbox input[type="checkbox"]:checked:before,
+.fitline_options_item_checklist input[type="checkbox"]:checked:before {
+	right: 50%;
+	left: auto;
+	-webkit-transform: translate(50%, -50%);
+	-ms-transform: translate(50%, -50%);
+	transform: translate(50%, -50%);
+}
+.fitline_checklist.fitline_sortable .fitline_checklist_item_label:after {
+	left: 12px;
+	right: auto;
+}
+.fitline_scheme_editor_scheme {
+	padding-left: 105px;
+	padding-right: 0;
+}
+.fitline_scheme_editor_controls {
+	left: 0;
+	right: auto;
+}
+.fitline_scheme_editor_control {
+	margin-right: 2px;
+	margin-left: 0;
+}
+.fitline_options_inherit_off .fitline_options_inherit_lock {
+	left: 4px;
+	right: auto;
+}
+.fitline_options_inherit_lock {
+	left: 2px;
+	right: auto;
+}
+.fitline_options_item_image .fitline_media_selector,
+.fitline_options_item_media .fitline_media_selector,
+.fitline_options_item_audio .fitline_media_selector,
+.fitline_options_item_video .fitline_media_selector {
+	float: none !important;
+}
+
+@media (min-width: 601px) {
+	.fitline_options_header.sticky {
+		margin: 0 -20px 0 0;
+	}
+}
